@@ -1,73 +1,127 @@
+/* Estilos generales */
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background-color: #2B3430;
-    color: #c4c4c4;
-    margin: 0;
-    line-height: 1.6;
+    font-family: 'Segoe UI', system-ui, sans-serif; /* Fuente */
+    background-color: #2B3430; /* Color del fondo */
+    color: #c4c4c4; /* Color del texto */
+    margin: 0; /* Para quitar el margen */
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 header {
-    background-color: #333d38;
-    padding: 3rem 1rem;
-    text-align: center;
-    border-bottom: 4px solid #3B946C;
+    background-color: #333d38; /* Color de fondo del encabezado */
+    padding: 1rem 0.5rem; /* Espaciado interno */
+    text-align: center; /* Centrar */
+    border-bottom: 4px solid #3B946C; /* Línea verde */
 }
 h1 {
-    margin: 0;
-    color: #e0e0e0;
+    margin: 0; /* Quitar margen */
+    color: #e0e0e0; /* Color del título */
 }
 h2 {
-    color: #3B946C;
-    border-bottom: 1px solid #3e5c4d;
-    padding-bottom: 0.5rem;
+    color: #3B946C; /* Color para los subtítulos */
+    border-bottom: 1px solid #3e5c4d; /* Línea debajo de los subtítulos */
+    padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
 }
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 800px; /* Ancho máximo */
+    margin: 2rem auto; /* Para centrar */
+    padding: 0 1rem; /* Espacio interno */
 }
 section {
-    background-color: #39453f;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
+    background-color: #39453f; /* Fondo de las secciones */
+    padding: 1rem; /* Espacio interno */
+    margin-bottom: 2rem; /* Espacio entre secciones */
+    border-radius: 8px; /* Para poner bordes redondeados */
 }
 ul {
-    list-style-type: square;
-    padding-left: 1.5rem;
+    list-style-type: square; /* Tipo de viñeta */
+    padding-left: 1.5rem; /* Espacio a la izquierda */
+    color: #d0e4dd; /* Color */
 }
 a {
-    color: #62947d;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #62947d; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Para que resalten */
+    transition: color 0.3s; /* Transición al pasar el cursor */
 }
 a:hover {
-    color: #6ED3A5;
-    text-decoration: underline;
+    color: #6ED3A5; /* Color al pasar el cursor */
 }
 footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9em;
-    color: #777;
+    text-align: center; /* Centrar el texto */
+    padding: 2rem; /* Espacio interno */
+    font-size: 0.9em; /* Tamaño de fuente */
+    color: #858585; /* Color gris para el pie de página */
 }
+
 /* Estilos para el menú */
 .menu {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    display: flex; /* Para alinear los enlaces */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #1f2623; /* Color de fondo */
+    width: fit-content; /* Ajuste del ancho de los botones */
+    margin: 0.1rem auto; /* Centra en la parte superior */
+    padding: 0.4rem; /* Espaciado interno */
+    border-radius: 50px; /* Bordes circulares */
+    gap: 0.7rem; /* Espacio entre ellos */
 }
+
+/* Enlaces individuales */
 .menu a {
-    background-color: #2B3430;
-    color: #c4c4c4;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    border: 1px solid #486A5A;
+    color: #c4c4c4; /* Color del texto */
+    padding: 0.4rem 1.2rem; /* Espaciado interno */
+    border-radius: 50px; /* El fondo al pasar el ratón también será curvo */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Para que resalten */
+    transition: all 0.3s ease; /* Transición para el hover */
 }
-.menu a:hover {
-    background-color: #3B946C;
-    color: #ffffff;
-    text-decoration: none;
-    border-color: #6ED3A5;
+
+/* Efecto hover y página activa */
+.menu a:hover, .menu a.active { 
+    background-color: #3B946C; /* Para indicar dónde estamos */
+    color: #ffffff; /* Color del texto al pasar el ratón */
+}
+/* Estilos de la tarjeta central */
+.profile-card {
+    display: flex; /* Para alinear la imagen y el texto */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: wrap; /* Permite que en móviles la imagen se ponga encima del texto */
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+    background-color: #424F49; /* Fondo oscuro de la tarjeta */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 16px; /* Bordes redondeados */
+}
+
+/* Estilo de la imagen */
+.profile-img {
+    width: 160px; /* Ancho fijo */
+    height: 160px; /* Alto fijo */
+    object-fit: cover; /* Evita que la foto se deforme */
+    border-radius: 16px; /* Bordes redondeados como en tu referencia */
+}
+
+/* Estilo del texto interior */
+.profile-info h2 {
+    border-bottom: none; /* Quitamos la línea verde solo en este título */
+    margin-top: 0; /* Quitar margen superior */
+    color: #3B946C; /* Tu verde de acento */
+}
+
+.profile-info p {
+    color: #c4c4c4; /* Color del texto */
+    margin-bottom: 1.5rem; /* Espacio debajo del párrafo */
+}
+
+/* Botón "Saber más" */
+.btn {
+    display: inline-block; /* Para que se comporte como un botón */
+    padding: 0.5rem 1.2rem; /* Espaciado interno */
+    border: 1px solid #3B946C; /* Borde verde */
+    border-radius: 50px; /* Bordes redondeados */
+    color: #3B946C; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.btn:hover {
+    background-color: #3B946C; /* Fondo al pasar el ratón */
+    color: #ffffff; /* Color del texto al pasar el ratón */
 }
