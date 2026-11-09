@@ -51,3 +51,23 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+/* Estilos para el menú */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.menu a {
+    background-color: #2B3430;
+    color: #c4c4c4;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #486A5A;
+}
+.menu a:hover {
+    background-color: #3B946C;
+    color: #ffffff;
+    text-decoration: none;
+    border-color: #6ED3A5;
+}
