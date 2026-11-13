@@ -1,4 +1,7 @@
 /* Estilos generales */
+html {
+    scroll-behavior: smooth; /* Para que la transiciones sean fluidas y no instantaneas */
+}
 body {
     font-family: 'Segoe UI', system-ui, sans-serif; /* Fuente */
     background-color: #2B3430; /* Color del fondo */
@@ -72,7 +75,7 @@ footer {
     border-radius: 50px; /* El fondo al pasar el ratón también será curvo */
     text-decoration: none; /* Quitar subrayado */
     font-weight: bold; /* Para que resalten */
-    transition: all 0.3s ease; /* Transición para el hover */
+    transition: all 0.3s ease; /* Transición */
 }
 
 /* Efecto hover y página activa */
@@ -101,9 +104,9 @@ footer {
 
 /* Estilo del texto interior */
 .profile-info h2 {
-    border-bottom: none; /* Quitamos la línea verde solo en este título */
+    border-bottom: none; /* Para quitar la línea verde */
     margin-top: 0; /* Quitar margen superior */
-    color: #3B946C; /* Tu verde de acento */
+    color: #3B946C; /* Color */
 }
 
 .profile-info p {
@@ -124,4 +127,21 @@ footer {
 .btn:hover {
     background-color: #3B946C; /* Fondo al pasar el ratón */
     color: #ffffff; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para páginas en wip */
+body.en-construccion {
+    display: flex; /* Para centrar el contenido */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 100vh; /* Para que ocupe toda la altura de la ventana */
+    text-align: center; /* Para asegurar que se centre */
+}
+
+.gif-obras {
+    width: 350px; /* Ancho */
+    max-width: 80%; /* Para que se ajuste en pantallas pequeñas */
+    border-radius: 9px; /* Bordes redondeados */
+    margin-bottom: 1.5rem; /* Espacio debajo de la imagen */
 }
